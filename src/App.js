@@ -68,23 +68,23 @@ function App() {
 
     ]);
     setSupplyLineData([
-      { x: 320, y: 30, color: "#D27D00", text: "Port COMMON LINE", id: "port" },
-      { x: 660, y: 50, color: "#219653", text: "Middle COMMON LINE", id: "middle" },
-      { x: 935, y: 50, color: "#6CD9A5", text: "Starboard COMMON LINE", id: "starboard" },
+      { x: 320, y: 30, color: "#DCDCDC	", text: "Port COMMON LINE", id: "port" },
+      { x: 660, y: 50, color: "#DCDCDC	", text: "Middle COMMON LINE", id: "middle" },
+      { x: 935, y: 50, color: "#DCDCDC	", text: "Starboard COMMON LINE", id: "starboard" },
     ]);
     setTankData([
-      { x: 270, y: 10, color: "#D27D00", text: "PORT COMMON LINE", type: "supplyTank", id: "port" },
+      { x: 270, y: 10, color: "#DCDCDC	", text: "PORT COMMON LINE", type: "supplyTank", id: "port" },
       { x: 270, y: 70, color: "#2F80ED", text: "1s", type: 'tank', id: "1s" },
       { x: 270, y: 120, color: "#6CD9A5", text: "1p", type: 'tank', id: "1p" },
       { x: 270, y: 170, color: "#219653", text: "2s", type: 'tank', id: "2s" },
-      { x: 270, y: 220, color: "#219653", text: "MIDDLE COMMON LINE", type: "supplyTank", id: "middle" },
+      { x: 270, y: 220, color: "#DCDCDC	", text: "MIDDLE COMMON LINE", type: "supplyTank", id: "middle" },
       { x: 270, y: 290, color: "#D27D00", text: "2p", type: 'tank', id: "2p" },
       { x: 270, y: 340, color: "#D27D00", text: "3s", type: 'tank', id: "3s" },
       { x: 270, y: 390, color: "#D27D00", text: "3p", type: 'tank', id: "3p" },
       { x: 270, y: 440, color: "#2F80ED", text: "4s", type: 'tank', id: "4s" },
       { x: 270, y: 490, color: "#2F80ED", text: "4p", type: 'tank', id: "4p" },
       { x: 270, y: 540, color: "#2F80ED", text: "5s", type: 'tank', id: "5s" },
-      { x: 270, y: 590, color: "#6CD9A5", text: "STARBOARD COMMON LINE", type: "supplyTank", id: "starboard" },
+      { x: 270, y: 590, color: "#DCDCDC	", text: "STARBOARD COMMON LINE", type: "supplyTank", id: "starboard" },
     ]);
   }, []);
   return (<div>

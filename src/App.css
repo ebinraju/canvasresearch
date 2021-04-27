@@ -97,6 +97,10 @@ width: 175px;
   align-items: center;
 }
 
+.header-section h3 {
+ margin: 0px;
+}
+
 .close-btn {
   font-size: 20px;
   color: gray;

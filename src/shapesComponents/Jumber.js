@@ -18,7 +18,7 @@ export const JumberCard = (props) => {
         {props.showAction === "jumber" &&
             <div className="popover">
                 <div className="header-section">
-                    <h3>JUMBER</h3>
+                    <h3>Jumber</h3>
                     <span className="close-btn" onClick={() => props.onCardClick("")}>x</span>
                 </div>
                 <p>The Jumber connector is used to connect between any tanks</p>

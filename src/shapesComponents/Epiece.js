@@ -15,7 +15,7 @@ export const EpieceCard = (props) => {
         {props.showAction === "epiece" &&
             <div className="popover">
                 <div className="header-section">
-                    <h3>E-PIECE</h3>
+                    <h3>E-Piece</h3>
                     <span className="close-btn" onClick={() => props.onCardClick("")}>x</span>
                 </div>
                 <p>The Upiece connector is used to connect between three adjacent tanks</p>
