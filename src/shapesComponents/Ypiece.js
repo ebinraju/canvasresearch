@@ -1,7 +1,6 @@
 import React from 'react';
 import Select from 'react-select';
 
-
 export const YpieceCard = (props) => {
     return <div className="card-wrapper">
         <div className={"component_card " + (props.showAction === "ypiece" ? " active_card" : "")} onClick={() => props.onCardClick("ypiece")}>

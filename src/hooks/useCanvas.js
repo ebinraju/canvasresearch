@@ -88,6 +88,7 @@ const drawEComponent = (ctx, location) => {
 }
 
 const drawJComponent = (ctx, location) => {
+  let startXAxis = location.startXAxis + 15; let startYAxis = location.startYAxis + 8; let endYAxis = location.endYAxis + 8;
   // let startXAxis = 270; let startYAxis = 70; let endYAxis = 290;
   //360 270 180 90 45
   //210 105+70=175   70+70=140   52.5+70=122.5
@@ -95,17 +96,18 @@ const drawJComponent = (ctx, location) => {
   //105 52,5+170
   ctx.beginPath();
   ctx.lineWidth = 10;
+  ctx.strokeStyle = location.color;
 
   // ctx.moveTo(startXAxis + 15, startYAxis);
   // ctx.bezierCurveTo(252, 70, 252, 122.5, 252, 130);
   // ctx.bezierCurveTo(252, 140, 270, 175, 270, 190);
   // ctx.bezierCurveTo(270, 200, 252, 222.5, 252, 250);
   // ctx.bezierCurveTo(252, 265, 252, endYAxis, startXAxis + 15, endYAxis);
-  ctx.moveTo(location.startXAxis, location.startYAxis);
-  ctx.bezierCurveTo(location.startXAxis - 40, location.startYAxis, location.startXAxis - 33, location.startYAxis, location.startXAxis - 40, location.startYAxis + 13);
-  ctx.bezierCurveTo(location.startXAxis - 30, ((location.startYAxis + location.endYAxis) / 2) - 13, location.startXAxis - 35, ((location.startYAxis + location.endYAxis) / 2) - 23, location.startXAxis - 10, (location.startYAxis + location.endYAxis) / 2);
-  ctx.bezierCurveTo(location.startXAxis - 13, ((location.startYAxis + location.endYAxis) / 2) + 13, location.startXAxis - 35, ((location.startYAxis + location.endYAxis) / 2) + 13, location.startXAxis - 40, location.endYAxis - 13);
-  ctx.bezierCurveTo(location.startXAxis - 40, location.endYAxis, location.startXAxis - 33, location.endYAxis, location.startXAxis, location.endYAxis);
+  ctx.moveTo(startXAxis, startYAxis);
+  ctx.bezierCurveTo(startXAxis - 40, startYAxis, startXAxis - 33, startYAxis, startXAxis - 40, startYAxis + 13);
+  ctx.bezierCurveTo(startXAxis - 30, ((startYAxis + endYAxis) / 2) - 13, startXAxis - 40, ((startYAxis + endYAxis) / 2) - 23, startXAxis - 15, (startYAxis + endYAxis) / 2);
+  ctx.bezierCurveTo(startXAxis - 18, ((startYAxis + endYAxis) / 2) + 13, startXAxis - 35, ((startYAxis + endYAxis) / 2) + 13, startXAxis - 40, endYAxis - 13);
+  ctx.bezierCurveTo(startXAxis - 40, endYAxis, startXAxis - 33, endYAxis, startXAxis, endYAxis);
   ctx.stroke();
 }
 
@@ -115,7 +117,7 @@ export const drawTank = (ctx, location) => {
   ctx.fillRect(location.x + 40, location.y, 675, 15);
   ctx.strokeRect(location.x, location.y, 780, 15);
   ctx.fillStyle = '#219653';
-  ctx.fillText(location.text, location.x - 20, location.y + 10);
+  ctx.fillText(location.text, location.x - 40, location.y + 10);
   ctx.fillText(location.text, location.x + 790, location.y + 10);
   ctx.restore();
 };
