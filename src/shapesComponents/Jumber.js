@@ -13,12 +13,12 @@ export const JumberCard = (props) => {
                     <rect x="2.19922" y="63" width="10" height="9" stroke-width="3" />
                 </svg>
             </span>
-            <span>JUMBER</span>
+            <span>JUMPER</span>
         </div>
         {props.showAction === "jumber" &&
             <div className="popover">
                 <div className="header-section">
-                    <h3>Jumber</h3>
+                    <h3>Jumper</h3>
                     <span className="close-btn" onClick={() => props.onCardClick("")}>x</span>
                 </div>
                 <p>The Jumber connector is used to connect between any tanks</p>

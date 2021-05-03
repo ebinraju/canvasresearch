@@ -20,8 +20,8 @@
 }
 
 button {
-  background-color: rgb(34, 20, 95);
-  border: 1px solid rgb(124, 110, 185);
+  background-color: #F8B113;
+  border: 1px solid #F8B113;
   color: white;
   padding: 5px 15px;
   text-align: center;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover{
-  background-color: rgb(104, 80, 212);
+  background-color: #F8B113;
 }
 .card-wrapper {
   position: relative;
