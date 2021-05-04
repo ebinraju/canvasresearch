@@ -37,13 +37,13 @@ function App() {
       setTankData([...tankData]);
       setSupplyLineData([...verticalLine]);
     } else if (shape === 'jumber') {
-      dataIs = { shape: "jumber", type: "Jpiece", id: "Jpiece", startXAxis: tank1.x, startYAxis: tank1.y, endYAxis: tank2.y, color: "#78b1ff" }
+      dataIs = { shape: "jumber", type: "Jpiece", startXAxis: tank1.x, startYAxis: tank1.y, endYAxis: tank2.y, color: "#78b1ff" }
     } else if (shape === 'upiece') {
-      dataIs = { shape: "Upiece", type: "Upiece", id: "Upiece", startXAxis: tank1.x, startYAxis: tank1.y, endXAxis: tank2.x, endYAxis: tank2.y, color: "#D27D00" }
+      dataIs = { shape: "Upiece", type: "Upiece", startXAxis: tank1.x, startYAxis: tank1.y, endXAxis: tank2.x, endYAxis: tank2.y, color: "#D27D00" }
     } else if (shape === 'ypiece') {
-      dataIs = { shape: "Ypiece", type: "Ypiece", id: "Ypiece", startXAxis: tank1.x, startYAxis: tank1.y, endXAxis: tank2.x, endYAxis: tank2.y, color: "#78b1ff" }
+      dataIs = { shape: "Ypiece", type: "Ypiece", startXAxis: tank1.x, startYAxis: tank1.y, endXAxis: tank2.x, endYAxis: tank2.y, color: "#78b1ff" }
     } else if (shape === 'epiece') {
-      dataIs = { shape: "Epiece", type: "Epiece", id: "Epiece", startXAxis: tank1.x, tank1: tank1.y, tank2: midtank.y, tank3: tank2.y, color: "#78b1ff" }
+      dataIs = { shape: "Epiece", type: "Epiece", startXAxis: tank1.x, tank1: tank1.y, tank2: midtank.y, tank3: tank2.y, color: "#78b1ff" }
     }
     setComponentsData([...componentsData, dataIs]);
     setActiveCard("");
@@ -64,7 +64,7 @@ function App() {
       // { shape: "Epiece", type: "Epiece", id: "Epiece", startXAxis: 250, tank1: 70, tank2: 120, tank3: 170, color: "#78b1ff" },
       // { shape: "Elbow", type: "Elbow", id: "Elbow1", yAxis: 170, chanelAxis: 660, color: "red",line:"middle" },
       // { shape: "Elbow", type: "Elbow", id: "Elbow1", yAxis: 170, chanelAxis: 935, color: "yellow",line:"starboard" },
-      { shape: "jumber", type: "jumber", id: "jumber", startXAxis: 250, startYAxis: 490, endXAxis: 250, endYAxis: 540, color: "#78b1ff" }
+      // { shape: "jumber", type: "jumber", id: "jumber", startXAxis: 250, startYAxis: 490, endXAxis: 250, endYAxis: 540, color: "#78b1ff" }
 
     ]);
     setSupplyLineData([
