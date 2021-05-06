@@ -7,7 +7,7 @@ const COMPONENTDISPLACEMENT = {
   ElbowXAxis: 50,
   ElbowYAxis: -20,
 }
-// const SHIFT_VALUE = 780;
+
 export function useCanvas() {
   const canvasRef = useRef(null);
   const [componentsData, setComponentsData] = useState([]);

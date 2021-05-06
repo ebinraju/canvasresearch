@@ -60,13 +60,7 @@ function App() {
     }
   }
   useEffect(() => {
-    setComponentsData([
-      // { shape: "Epiece", type: "Epiece", id: "Epiece", startXAxis: 250, tank1: 70, tank2: 120, tank3: 170, color: "#78b1ff" },
-      // { shape: "Elbow", type: "Elbow", id: "Elbow1", yAxis: 170, chanelAxis: 660, color: "red",line:"middle" },
-      // { shape: "Elbow", type: "Elbow", id: "Elbow1", yAxis: 170, chanelAxis: 935, color: "yellow",line:"starboard" },
-      // { shape: "jumber", type: "jumber", id: "jumber", startXAxis: 250, startYAxis: 490, endXAxis: 250, endYAxis: 540, color: "#78b1ff" }
-
-    ]);
+    // setComponentsData([]);
     setSupplyLineData([
       { x: 320, y: 30, color: "#DCDCDC	", text: "Port COMMON LINE", id: "port" },
       { x: 660, y: 50, color: "#DCDCDC	", text: "Middle COMMON LINE", id: "middle" },
